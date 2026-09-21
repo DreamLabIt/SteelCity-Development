@@ -1,6 +1,7 @@
 @import url('navbar.css');
 @import url('button.css');
 @import url('eyebrow.css');
+@import url('hero.css');
 
 *,
 *::before,
@@ -11,13 +12,14 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-hover: #1d4ed8;
-    --text-dark: #000000;
+    --primary-color: #DF2339;
+    --primary-hover: #c81f33;
+    --text-dark: #171717;
     --text-light: #64748b;
-    --bg-light: #000000;
+    --bg-light: #F3F3F3;
     --white: #ffffff;
-    --main-font: 'Rajdhani', sans-serif;
+    --heading-font: 'Rajdhani', sans-serif;
+    --body-font: 'Rubik', sans-serif;
     --transition: all 0.3s ease;
 }
 
