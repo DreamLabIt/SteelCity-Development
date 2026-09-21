@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteelCity Development</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon"><img src="./images/logo.png" alt="SteelCity logo"></div>
+                <div class="logo-text">SteelCity</div>
+            </div>
+
+            <ul class="menu" id="nav-menu">
+                <li><a href="#">Home</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a href="#">About Us</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a href="#">Services</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a href="#">Projects</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a href="#">Blog</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a href="#">Page</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a href="#">Contact</a><i class="fa-solid fa-chevron-down"></i></li>
+            </ul>
+
+            <div class="right-side">
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="help">
+                    <div class="call-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="help-text">
+                        <p>Need help?</p>
+                        <span>(808) 555-0111</span>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" id="menu-btn" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+    </main>
+
+</body>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    document.addEventListener('click', () => {
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+        }
+    });
+</script>
+
+</html>

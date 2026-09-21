@@ -1,0 +1,223 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 79px 0 60px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .logo-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar .logo-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #171717;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar .menu a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #171717;
+    text-decoration: none;
+}
+
+.navbar .menu i {
+    font-size: 10px;
+    color: #DF2339;
+}
+
+.navbar .right-side {
+    display: flex;
+    align-items: center;
+    gap: 71px;
+}
+
+.navbar .socials {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar .socials a {
+    color: #171717;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.navbar .help {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .call-icon {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.navbar .call-icon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #DF2339;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.navbar .call-icon i {
+    position: relative;
+    color: #DF2339;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.navbar .help-text p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #171717;
+    margin: 0;
+}
+
+.navbar .help-text span {
+    display: block;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #171717;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #171717;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .navbar .right-side {
+        gap: 30px;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100px;
+        right: 30px;
+        left: auto;
+        width: 320px;
+        background: #F3F3F3;
+        padding: 20px 30px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        gap: 15px;
+        border-radius: 8px;
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+
+    .navbar .menu li {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .socials {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0 15px;
+        height: 80px;
+    }
+
+    .navbar .menu {
+        top: 80px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 20px 15px;
+    }
+
+    .navbar .logo-text {
+        font-size: 22px;
+    }
+
+    .navbar .logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar .help {
+        display: none;
+    }
+}
