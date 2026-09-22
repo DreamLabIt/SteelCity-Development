@@ -21,6 +21,16 @@
     flex-shrink: 0;
 }
 
+
+.eyebrow--white-red {
+    color: #FFFFFF;
+}
+
+.eyebrow--white-red::before,
+.eyebrow--white-red::after {
+    background: #DF2339;
+}
+
 .eyebrow--red {
     color: #DF2339;
 }

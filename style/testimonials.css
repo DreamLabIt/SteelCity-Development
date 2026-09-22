@@ -35,7 +35,8 @@
 
 .testimonial-card {
     position: relative;
-    width: 630px;
+    width: 100%;
+    max-width: 630px;
     height: 344px;
     box-sizing: border-box;
     padding: 40px;
