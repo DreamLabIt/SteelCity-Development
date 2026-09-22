@@ -357,3 +357,138 @@
         min-width: 0;
     }
 }
+
+
+.site-footer--page {
+    background-color: #1A1A1A;
+}
+
+.site-footer--page .footer-heading {
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.site-footer--page .footer-about-text {
+    color: #CCCCCC;
+    opacity: 0.85;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.site-footer--page .footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.site-footer--page .footer-social-icon {
+    width: auto;
+    height: auto;
+    background: transparent;
+    border-radius: 0;
+    color: #CCCCCC;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.site-footer--page .footer-social-icon:hover {
+    color: var(--primary-color, #DF2339);
+    background: transparent;
+}
+
+.footer-col--services {
+    width: 100%;
+}
+
+.footer-links--simple {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-links--simple a {
+    color: #CCCCCC;
+    opacity: 0.85;
+    text-decoration: none;
+    font-family: var(--body-font);
+    font-size: 15px;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-links--simple a:hover {
+    color: var(--primary-color, #DF2339);
+    opacity: 1;
+}
+
+.footer-col--gallery {
+    max-width: 280px;
+    width: 100%;
+}
+
+.footer-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.site-footer--page .footer-bottom p,
+.site-footer--page .footer-bottom-links a {
+    color: #CCCCCC;
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+.site-footer--page .footer-bottom-links a:hover {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .site-footer--page .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-footer--page .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col--gallery {
+        max-width: 180px;
+        width: 100%;
+    }
+
+    .gallery-item {
+        width: 60px;
+        height: 60px;
+    }
+
+}
