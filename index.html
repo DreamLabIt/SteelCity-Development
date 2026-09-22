@@ -459,6 +459,60 @@
 
         </section>
 
+        <section class="faq-section">
+
+            <div class="faq-content">
+                <span class="eyebrow eyebrow--red eyebrow--start">Some FAQ</span>
+                <h2 class="section-title">Construction At Your Service A Passion Precision Pride</h2>
+
+                <div class="faq-list">
+
+                    <div class="faq-item is-open">
+                        <button class="faq-question" type="button">
+                            <span>What is the typical response time for IT support requests?</span>
+                            <span class="faq-toggle"><i class="fa-solid fa-minus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout. Many desktop
+                                publishing thre packages and web page editors</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>How do you ensure the security and confidentiality of our data?</span>
+                            <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>What services does your IT company provide?</span>
+                            <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="faq-image-group">
+                <img class="faq-img-top" src="./images/worker-1.png" alt="Team discussing plans">
+                <div class="faq-red-bar"></div>
+                <img class="faq-img-bottom" src="./images/worker-2.png" alt="Workers on site">
+            </div>
+
+        </section>
+
+
 
 
 
@@ -484,6 +538,23 @@
         if (navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
         }
+    });
+
+    document.querySelectorAll('.faq-question').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.faq-item');
+            const wasOpen = item.classList.contains('is-open');
+
+            document.querySelectorAll('.faq-item').forEach((el) => {
+                el.classList.remove('is-open');
+                el.querySelector('.faq-toggle i').className = 'fa-solid fa-plus';
+            });
+
+            if (!wasOpen) {
+                item.classList.add('is-open');
+                item.querySelector('.faq-toggle i').className = 'fa-solid fa-minus';
+            }
+        });
     });
 </script>
 
