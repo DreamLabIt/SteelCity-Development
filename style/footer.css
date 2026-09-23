@@ -4,7 +4,6 @@
     margin: 0 auto;
     background: #171717;
     box-sizing: border-box;
-    margin-top: 100px;
 }
 
 .footer-top {
@@ -276,9 +275,6 @@
 }
 
 @media (max-width: 1200px) {
-    .site-footer {
-        margin-top: 60px;
-    }
 
     .footer-top {
         gap: 40px;
@@ -317,9 +313,6 @@
 }
 
 @media (max-width: 576px) {
-    .site-footer {
-        margin-top: 40px;
-    }
 
     .footer-top {
         grid-template-columns: 1fr;

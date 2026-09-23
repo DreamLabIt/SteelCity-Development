@@ -5,6 +5,7 @@
     background: var(--white);
     padding: 20px;
     box-sizing: border-box;
+    margin-bottom: 100px;
 }
 
 .eyebrow--orange {
@@ -121,8 +122,11 @@
 
 
 
-
 @media (max-width: 1200px) {
+    .blog-section {
+        margin-bottom: 80px;
+    }
+
     .blog-grid {
         justify-content: center;
         flex-wrap: wrap;
@@ -151,6 +155,10 @@
 }
 
 @media (max-width: 768px) {
+    .blog-section {
+        margin-bottom: 60px;
+    }
+
     .blog-card {
         width: 100%;
     }
@@ -175,6 +183,7 @@
 @media (max-width: 480px) {
     .blog-section {
         padding: 20px 15px;
+        margin-bottom: 50px;
     }
 
     .blog-card-body {
