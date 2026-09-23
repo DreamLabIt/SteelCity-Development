@@ -16,6 +16,7 @@
 @import url('page-hero.css');
 @import url('map.css');
 @import url('call-banner.css');
+@import url('profile.css');
 
 *,
 *::before,
@@ -32,6 +33,7 @@
     --text-light: #616670;
     --bg-light: #F3F3F3;
     --white: #ffffff;
+    --text-secondary: #333F4D;
     --heading-font: 'Rajdhani', sans-serif;
     --body-font: 'Rubik', sans-serif;
     --transition: all 0.3s ease;
