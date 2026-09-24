@@ -279,3 +279,118 @@
     text-transform: capitalize;
     color: #FFFFFF;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .service-details-container {
+        max-width: 100%;
+    }
+
+    .service-details-left {
+        max-width: 60%;
+    }
+
+    .service-details-right {
+        max-width: 40%;
+    }
+
+    .service-details-main-img {
+        width: 100%;
+    }
+
+    .service-details-title {
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .service-details-section {
+        padding: 80px 0;
+    }
+
+    .service-details-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .service-details-left,
+    .service-details-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sidebar-widget-top {
+        padding: 30px 30px 0px 30px;
+    }
+
+    .sidebar-widget-buttom {
+        padding: 0px 30px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .service-details-section {
+        padding: 60px 0;
+    }
+
+    .service-details-title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .service-feature-grid,
+    .service-step-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-feature-card {
+        padding: 30px 20px;
+    }
+
+    .service-step-card {
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .service-step-number {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .service-step-info h4 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-details-container {
+        padding: 0px 15px;
+    }
+
+    .sidebar-widget-top,
+    .sidebar-widget-buttom {
+        padding: 20px;
+    }
+
+    .service-widget-title {
+        font-size: 26px;
+    }
+
+    .service-details-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .service-step-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
