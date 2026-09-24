@@ -289,6 +289,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    background: #D9D9D9;
 }
 
 .projects-row-1 .project-gallery-item {
@@ -366,4 +367,125 @@
 
 .gallery-caption-btn:hover i {
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+    .projects-row {
+        gap: 20px;
+    }
+
+    .projects-row-1 {
+        margin-bottom: 20px;
+    }
+
+    .gallery-item--w300 {
+        width: calc(25% - 15px);
+    }
+
+    .gallery-item--w630 {
+        width: calc(50% - 10px);
+    }
+
+    .projects-row-1 .project-gallery-item {
+        height: 400px;
+    }
+
+    .projects-row-2 .project-gallery-item {
+        height: 280px;
+    }
+
+    .gallery-caption {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .projects-gallery-section {
+        padding: 60px 20px;
+    }
+
+    .projects-row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .gallery-item--w300,
+    .gallery-item--w630 {
+        width: calc(50% - 10px);
+    }
+
+    .projects-row-1 .project-gallery-item,
+    .projects-row-2 .project-gallery-item {
+        height: 350px;
+    }
+
+    .projects-row-1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .projects-gallery-section {
+        padding: 50px 15px;
+    }
+
+    .projects-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-row-1 {
+        margin-bottom: 20px;
+    }
+
+    .gallery-item--w300,
+    .gallery-item--w630 {
+        width: 100%;
+    }
+
+    .projects-row-1 .project-gallery-item,
+    .projects-row-2 .project-gallery-item {
+        height: 300px;
+    }
+
+    .gallery-caption {
+        padding: 20px;
+    }
+
+    .gallery-caption-text h4 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 5px;
+    }
+
+    .gallery-caption-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .gallery-caption-btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .gallery-caption-btn i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .projects-row-1 .project-gallery-item,
+    .projects-row-2 .project-gallery-item {
+        height: 250px;
+    }
+
+    .gallery-caption {
+        padding: 15px;
+    }
+
+    .gallery-caption-text h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
