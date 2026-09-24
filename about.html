@@ -150,6 +150,90 @@
             </div>
         </section>
 
+        <section class="testimonial-section">
+            <div class="testimonial-container">
+
+                <div class="testimonial-quote-box ">
+                    <i class="fa-solid fa-quote-right testimonial-quote-icon about-quote-box-rigth"></i>
+                </div>
+
+                <div class="testimonial-quote-box ">
+                    <i class="fa-solid fa-quote-right testimonial-quote-icon about-quote-box-left"></i>
+                </div>
+
+                <button class="testimonial-nav prev-btn" id="prevBtn" aria-label="Previous Testimonial">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <div class="testimonial-content">
+
+                    <div class="testimonial-tab active" data-index="0">
+                        <div class="author-avatar">
+                            <img src="./images/mamber-3.png" alt="Savannah Nguyen" class="testimonial-avatar">
+                        </div>
+                        <h3 class="author-name">Cameron Williamson</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Et nunc purus purus egestas. Nisi ultrices morbi dui placerat nisi enim pharetra. Quis
+                            volutpat potenti vitae faucibus suscipit sapien vulputat Et nunc purus purus suscipit
+                            sapien
+                            vulputat Et nunc purus purus
+                        </p>
+                    </div>
+
+                    <div class="testimonial-tab" data-index="1">
+                        <div class="author-avatar">
+                            <img src="./images/mamber-2.png" alt="Cameron Williamson" class="testimonial-avatar">
+                        </div>
+                        <h3 class="author-name">Robert Fox</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Aliquam eros justo, posuere lobortis viverra laoreet mattis ullamcorper posuere viverra.
+                            Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper
+                            viverra.
+                        </p>
+                    </div>
+
+                    <div class="testimonial-tab" data-index="2">
+                        <div class="author-avatar">
+                            <img src="images/mamber-1.png" alt="Esther Howard">
+                        </div>
+                        <h3 class="author-name">Esther Howard</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Laoreet matti ullamc orper Aliquam eros justo, posuere lobortis posu ere vi. Aliquam
+                            eros
+                            justo, posuere Aliquam eros justo, pa loborti viverra laoreet augue.
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="testimonial-nav next-btn" id="nextBtn" aria-label="Next Testimonial">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+        </section>
+
         <footer class="site-footer site-footer--page">
 
             <div class="footer-top">
@@ -250,6 +334,33 @@
         if (navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
         }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabs = document.querySelectorAll('.testimonial-tab');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function showTab(index) {
+            tabs.forEach((tab, i) => {
+                if (i === index) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? tabs.length - 1 : currentIndex - 1;
+            showTab(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex === tabs.length - 1) ? 0 : currentIndex + 1;
+            showTab(currentIndex);
+        });
     });
 </script>
 

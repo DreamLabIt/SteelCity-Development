@@ -186,3 +186,155 @@
         line-height: 24px;
     }
 }
+
+
+
+
+
+
+
+
+.testimonial-section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 120px 0;
+    box-sizing: border-box;
+    background-color: #F3F3F3;
+}
+
+.testimonial-container {
+    max-width: 1330px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.about-quote-box-rigth {
+    position: absolute;
+    top: -30px;
+    right: 100px;
+    font-size: 112px;
+    color: transparent;
+    -webkit-text-stroke: 2.28px #F68B21;
+    opacity: 0.15;
+}
+
+.about-quote-box-left {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    font-size: 112px;
+    color: transparent;
+    -webkit-text-stroke: 2.28px #F68B21;
+    opacity: 0.15;
+}
+
+.testimonial-nav {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.prev-btn {
+    background: transparent;
+    border: 1px solid #DF2339;
+    color: #DF2339;
+}
+
+.prev-btn:hover {
+    background: #DF2339;
+    color: #FFFFFF;
+}
+
+.next-btn {
+    background: #DF2339;
+    color: #FFFFFF;
+}
+
+.next-btn:hover {
+    background: #B91C2E;
+}
+
+.testimonial-nav i {
+    font-size: 16px;
+}
+
+.testimonial-content {
+    max-width: 690px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.testimonial-tab {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.testimonial-tab.active {
+    display: block;
+    opacity: 1;
+}
+
+.author-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-family: var(--heading-font, 'Rajdhani', sans-serif);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #171717;
+    margin-bottom: 20px;
+}
+
+.testimonial-tab .stars {
+    color: #F68B21;
+
+    font-weight: 900;
+    font-style: Solid;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.testimonial-text {
+    font-family: var(--body-font, 'Rubik', sans-serif);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #616670;
+}
