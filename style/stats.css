@@ -146,3 +146,234 @@
         height: 60px;
     }
 }
+
+
+.about-stats {
+    width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+
+.about-stats .stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-stats .stat-item {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border-left: none;
+    box-shadow: none;
+    padding: 0 40px;
+    justify-content: flex-start;
+    gap: 30px;
+    border-right: 1px solid #E3E3E3;
+    border-radius: 0;
+}
+
+.about-stats .stat-item:last-child {
+    border-right: none;
+}
+
+.about-stats .stat-item-icon {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.about-stats .stat-item-text h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: #171717;
+    margin-bottom: 5px;
+}
+
+.about-stats .stat-item-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #616670;
+}
+
+@media (max-width: 1200px) {
+    .about-stats .stat-item {
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .about-stats .stat-item-text h3 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-stats .stats-row {
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+
+    .about-stats .stat-item {
+        width: 50%;
+        padding: 10px 20px;
+    }
+
+    .about-stats .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .about-stats .stat-item:nth-child(3) {
+        border-top: 1px solid #E3E3E3;
+    }
+
+    .about-stats .stat-item:nth-child(4) {
+        border-top: 1px solid #E3E3E3;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-stats .stats-row {
+        flex-direction: column;
+    }
+
+    .about-stats .stat-item {
+        width: 100%;
+        border-right: none !important;
+        border-bottom: 1px solid #E3E3E3;
+        padding: 20px 0;
+        justify-content: center;
+    }
+
+    .about-stats .stat-item:last-child {
+        border-bottom: none;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .about-stats {
+        padding: 90px 20px;
+    }
+
+    .about-stats .stat-item {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .about-stats .stat-item-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .about-stats .stat-item-text h3 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-stats {
+        padding: 70px 20px;
+    }
+
+    .about-stats .stats-row {
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+
+    .about-stats .stat-item {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
+
+    .about-stats .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .about-stats .stat-item:nth-child(3) {
+        border-top: 1px solid #E3E3E3;
+        padding-top: 25px;
+    }
+
+    .about-stats .stat-item:nth-child(4) {
+        border-top: 1px solid #E3E3E3;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-stats {
+        padding: 60px 15px;
+    }
+
+    .about-stats .stat-item-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .about-stats .stat-item-text h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .about-stats .stat-item-text p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-stats {
+        padding: 40px 15px;
+    }
+
+    .about-stats .stats-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .about-stats .stat-item {
+        width: 100%;
+        border-right: none !important;
+        border-bottom: 1px solid #E3E3E3;
+        padding: 20px 0;
+        justify-content: flex-start;
+    }
+
+    .about-stats .stat-item:nth-child(3),
+    .about-stats .stat-item:nth-child(4) {
+        border-top: none;
+    }
+
+    .about-stats .stat-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .about-stats .stat-item:first-child {
+        padding-top: 0;
+    }
+
+    .about-stats .stat-item-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-stats .stat-item-text h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about-stats .stat-item-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
