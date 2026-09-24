@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+.page-about {
+    background-color: #FFFFFF;
+    padding: 120px 0 0 0;
+}
+
+
+
 .about-block {
     display: flex;
     align-items: center;
@@ -16,6 +23,10 @@
     max-width: 1421px;
     margin-bottom: 120px;
     margin-left: 122px;
+}
+
+.about-content-page {
+    margin-bottom: 0px;
 }
 
 .about-image {
