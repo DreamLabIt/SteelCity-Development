@@ -271,3 +271,129 @@
 .nav-btn.next-post i {
     color: #DF2339;
 }
+
+
+@media (max-width: 1200px) {
+    .project-details-article {
+        padding: 80px 20px;
+    }
+
+    .gallery-img-wrap {
+        width: 100%;
+    }
+
+    .project-info-card {
+        height: 450px;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-hero-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-wrap-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-info-card {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .project-details-title {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .project-details-subtitle {
+        font-size: 28px;
+    }
+
+    .project-details-gallery.gallery-col-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-details-article {
+        padding: 60px 15px;
+    }
+
+    .project-info-header {
+        font-size: 26px;
+        padding: 20px;
+    }
+
+    .project-info-body {
+        padding: 20px 25px;
+    }
+
+    .project-details-title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .project-details-subtitle {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .project-details-gallery.gallery-col-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img-wrap {
+        height: 240px;
+    }
+
+    .project-checklist li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-info-header {
+        font-size: 22px;
+    }
+
+    .project-rating {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .project-details-title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .project-details-subtitle {
+        font-size: 20px;
+    }
+
+    .project-navigation {
+        padding: 18px 0;
+    }
+
+    .nav-btn {
+        font-size: 14px;
+        gap: 6px;
+    }
+}
