@@ -351,12 +351,12 @@
 @media (max-width: 992px) {
 
     .about-quote-box-rigth {
-        top: -30px;
+        top: -20px;
         right: 30px;
     }
 
     .about-quote-box-left {
-        top: -30px;
+        top: -20px;
         left: 30px;
     }
 
@@ -389,12 +389,12 @@
 @media (max-width: 768px) {
 
     .about-quote-box-rigth {
-        top: -30px;
+        top: -10px;
         right: 20px;
     }
 
     .about-quote-box-left {
-        top: -30px;
+        top: -10px;
         left: 20px;
     }
 
@@ -432,6 +432,17 @@
 }
 
 @media (max-width: 576px) {
+
+    .about-quote-box-rigth {
+        top: -5px;
+        right: 20px;
+    }
+
+    .about-quote-box-left {
+        top: -5px;
+        left: 20px;
+    }
+
     .testimonials-section {
         padding: 40px 0;
     }
