@@ -315,6 +315,10 @@
     transform: translateY(20px);
 }
 
+.gallery-caption a {
+    text-decoration: none;
+}
+
 .project-gallery-item:hover .gallery-caption {
     opacity: 1;
     transform: translateY(0);
