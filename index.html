@@ -1,826 +1,1020 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SteelCity Development</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Your CSS -->
-    <link rel="stylesheet" href="style/style.css">
-</head>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <main>
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo-icon">
+            <img src="./images/logo.png" alt="SteelCity logo" />
+          </div>
+          <div class="logo-text">SteelCity</div>
+        </div>
 
-        <nav class="navbar">
-            <div class="logo">
-                <div class="logo-icon"><img src="./images/logo.png" alt="SteelCity logo"></div>
-                <div class="logo-text">SteelCity</div>
+        <ul class="menu" id="nav-menu">
+          <li>
+            <a href="/index.html">Home</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/about.html">About Us</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/service.html">Services</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/project.html">Projects</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/team.html">Page</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+        </ul>
+
+        <div class="right-side">
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="help">
+            <div class="call-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="help-text">
+              <p>Need help?</p>
+              <span>(808) 555-0111</span>
             </div>
+          </div>
 
-            <ul class="menu" id="nav-menu">
-                <li><a href="/index.html">Home</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/about.html">About Us</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/service.html">Services</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/project.html">Projects</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/blog.html">Blog</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="#">Page</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/contact.html">Contact</a><i class="fa-solid fa-chevron-down"></i></li>
+          <button
+            class="menu-toggle"
+            id="menu-btn"
+            aria-label="Toggle Navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <section class="hero-section">
+        <img
+          class="sketch-bg"
+          src="./images/sketch-bg.png"
+          alt="Industrial Sketch Background"
+        />
+
+        <div class="hero-bg-left">
+          <div class="hero-content">
+            <span class="smart-solutions">Smart Solutions</span>
+            <h1 class="hero-title">
+              Building the spaces where memories are made
+            </h1>
+            <p class="hero-desc">
+              We have been operating for over a decade, providing top-notch
+              services to our clients and building a strong
+            </p>
+            <button class="btn btn-primary" style="width: 157px">
+              About Us <i class="fa-solid fa-plus" style="margin-left: 5px"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-bg-right">
+          <img
+            class="workers-hexagon"
+            src="./images/workers-hexagon.png"
+            alt="Construction Workers"
+          />
+        </div>
+      </section>
+
+      <section class="about-services-section">
+        <div class="about-block">
+          <div class="about-image">
+            <img src="./images/about-workers.png" alt="Construction workers" />
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <img src="./images/delivery.svg" alt="" />
+              </div>
+              <div class="stat-info">
+                <h3>4k+</h3>
+                <p>Daily Activate Customer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="eyebrow eyebrow--red">About Us</span>
+            <h2 class="section-title">
+              Transforming Spaces<br />Creating Memories
+            </h2>
+            <p class="section-text">
+              It is a long established fact that a reader will be distracted by
+              the readablejk content of a page when looking at its layout. Lorem
+              Ipsum is simply dummyj
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon"
+                  ><i class="fa-solid fa-angles-right"></i
+                ></span>
+                <div class="feature-text">
+                  <h4>Roof Repair</h4>
+                  <p>
+                    It is a long established fact that a reader will distracted
+                    by the readablejk content of a page when looking at its
+                    layout.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item feature-item-b">
+                <span class="feature-icon"
+                  ><i class="fa-solid fa-angles-right"></i
+                ></span>
+                <div class="feature-text">
+                  <h4>Plumbing Installation</h4>
+                  <p>
+                    It is a long established fact that a reder will istracted by
+                    the readablejk content of page when looking at its layout.
+                  </p>
+                </div>
+              </li>
             </ul>
+          </div>
+        </div>
 
-            <div class="right-side">
-                <div class="socials">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-
-                <div class="help">
-                    <div class="call-icon"><i class="fa-solid fa-phone"></i></div>
-                    <div class="help-text">
-                        <p>Need help?</p>
-                        <span>(808) 555-0111</span>
-                    </div>
-                </div>
-
-                <button class="menu-toggle" id="menu-btn" aria-label="Toggle Navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+        <div class="services-block">
+          <div class="services-header">
+            <div class="services-heading">
+              <span class="eyebrow eyebrow--dark eyebrow--start"
+                >Our Services</span
+              >
+              <h2 class="section-title">
+                Constructing Excellence<br />Delivering Results
+              </h2>
             </div>
-        </nav>
+            <p class="services-desc">
+              It is a long established fact that a reader will be distracted by
+              the It is a long established fact that a reader will be distracted
+              by the It is a long established fact that a reader will be
+            </p>
+          </div>
 
-        <section class="hero-section">
-            <img class="sketch-bg" src="./images/sketch-bg.png" alt="Industrial Sketch Background">
-
-            <div class="hero-bg-left">
-                <div class="hero-content">
-                    <span class="smart-solutions">Smart Solutions</span>
-                    <h1 class="hero-title">Building the spaces where memories are made</h1>
-                    <p class="hero-desc">
-                        We have been operating for over a decade, providing top-notch services to our clients and
-                        building a strong
-                    </p>
-                    <button class="btn btn-primary" style="width: 157px;">
-                        About Us <i class="fa-solid fa-plus" style="margin-left: 5px;"></i>
-                    </button>
-                </div>
+          <div class="service-list">
+            <div class="service-row">
+              <div class="service-thumb">
+                <img
+                  src="./images/service-electrical.png"
+                  alt="Electrical Wiring"
+                />
+              </div>
+              <h4 class="service-title">Electrical Wiring</h4>
+              <p class="service-desc">
+                It is a long established fact that a reader will be distracted
+                by the
+              </p>
+              <button class="btn btn-outline service-btn">
+                Read More <i class="fa-solid fa-plus"></i>
+              </button>
             </div>
 
-            <div class="hero-bg-right">
-                <img class="workers-hexagon" src="./images/workers-hexagon.png" alt="Construction Workers">
-            </div>
-        </section>
-
-        <section class="about-services-section">
-
-            <div class="about-block">
-
-                <div class="about-image">
-                    <img src="./images/about-workers.png" alt="Construction workers">
-
-                    <div class="stat-card">
-                        <div class="stat-icon"><img src="./images/delivery.svg" alt=""></div>
-                        <div class="stat-info">
-                            <h3>4k+</h3>
-                            <p>Daily Activate Customer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-content">
-                    <span class="eyebrow eyebrow--red">About Us</span>
-                    <h2 class="section-title">Transforming Spaces<br>Creating Memories</h2>
-                    <p class="section-text">
-                        It is a long established fact that a reader will be distracted by the readablejk
-                        content of a page when looking at its layout. Lorem Ipsum is simply dummyj
-                    </p>
-
-                    <ul class="feature-list">
-                        <li class="feature-item">
-                            <span class="feature-icon"><i class="fa-solid fa-angles-right"></i></span>
-                            <div class="feature-text">
-                                <h4>Roof Repair</h4>
-                                <p>It is a long established fact that a reader will distracted by the
-                                    readablejk content of a page when looking at its layout.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item  feature-item-b ">
-                            <span class="feature-icon"><i class="fa-solid fa-angles-right"></i></span>
-                            <div class="feature-text">
-                                <h4>Plumbing Installation</h4>
-                                <p>It is a long established fact that a reder will istracted by the
-                                    readablejk content of page when looking at its layout.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
+            <div class="service-row">
+              <div class="service-thumb">
+                <img
+                  src="./images/service-flooring.png"
+                  alt="Flooring Installation"
+                  class="service-thumb"
+                />
+              </div>
+              <h4 class="service-title">Flooring Installation</h4>
+              <p class="service-desc">
+                It is a long established fact that a reader will be distracted
+                by the
+              </p>
+              <button class="btn btn-outline service-btn">
+                Read More <i class="fa-solid fa-plus"></i>
+              </button>
             </div>
 
-            <div class="services-block">
-
-                <div class="services-header">
-                    <div class="services-heading">
-                        <span class="eyebrow eyebrow--dark eyebrow--start">Our Services</span>
-                        <h2 class="section-title">Constructing Excellence<br>Delivering Results</h2>
-                    </div>
-                    <p class="services-desc">
-                        It is a long established fact that a reader will be distracted by the It is a
-                        long established fact that a reader will be distracted by the It is a long
-                        established fact that a reader will be
-                    </p>
-                </div>
-
-                <div class="service-list">
-
-                    <div class="service-row">
-                        <div class="service-thumb">
-                            <img src="./images/service-electrical.png" alt="Electrical Wiring">
-
-                        </div>
-                        <h4 class="service-title">Electrical Wiring</h4>
-                        <p class="service-desc">It is a long established fact that a reader will be
-                            distracted by the</p>
-                        <button class="btn btn-outline service-btn">Read More <i class="fa-solid fa-plus"></i></button>
-                    </div>
-
-                    <div class="service-row">
-                        <div class="service-thumb">
-                            <img src="./images/service-flooring.png" alt="Flooring Installation" class="service-thumb">
-                        </div>
-                        <h4 class="service-title">Flooring Installation</h4>
-                        <p class="service-desc">It is a long established fact that a reader will be
-                            distracted by the</p>
-                        <button class="btn btn-outline service-btn">Read More <i class="fa-solid fa-plus"></i></button>
-                    </div>
-
-                    <div class="service-row">
-                        <div class="service-thumb">
-                            <img src="./images/service-fence.png" alt="Fence Repair" class="service-thumb">
-                        </div>
-                        <h4 class="service-title">Fence Repair</h4>
-                        <p class="service-desc">It is a long established fact that a reader will be
-                            distracted by the</p>
-                        <button class="btn btn-outline service-btn">Read More <i class="fa-solid fa-plus"></i></button>
-                    </div>
-
-                </div>
-
+            <div class="service-row">
+              <div class="service-thumb">
+                <img
+                  src="./images/service-fence.png"
+                  alt="Fence Repair"
+                  class="service-thumb"
+                />
+              </div>
+              <h4 class="service-title">Fence Repair</h4>
+              <p class="service-desc">
+                It is a long established fact that a reader will be distracted
+                by the
+              </p>
+              <button class="btn btn-outline service-btn">
+                Read More <i class="fa-solid fa-plus"></i>
+              </button>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="recent-work-section">
+        <div class="recent-work-header">
+          <div class="recent-work-heading">
+            <span class="eyebrow eyebrow--red">Recent Work</span>
+            <h2 class="section-title section-title--white">
+              Building Strong Foundations<br />For Success
+            </h2>
+          </div>
 
-        <section class="recent-work-section">
+          <div class="recent-work-nav">
+            <button
+              class="nav-arrow nav-arrow--prev"
+              aria-label="Previous project"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="nav-arrow nav-arrow--next" aria-label="Next project">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
 
-            <div class="recent-work-header">
-                <div class="recent-work-heading">
-                    <span class="eyebrow eyebrow--red">Recent Work</span>
-                    <h2 class="section-title section-title--white">Building Strong Foundations<br>For Success</h2>
-                </div>
-
-                <div class="recent-work-nav">
-                    <button class="nav-arrow nav-arrow--prev" aria-label="Previous project">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <button class="nav-arrow nav-arrow--next" aria-label="Next project">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
+        <div class="gallery-row">
+          <div class="gallery-item">
+            <img src="./images/work-1.png" alt="Structural work" />
+            <div class="gallery-caption">
+              <div class="gallery-caption-text">
+                <h4>Steel Framing</h4>
+                <p>Lorem Ipsum is simply dummy</p>
+              </div>
+              <button class="gallery-caption-btn" aria-label="View project">
+                <i class="fa-solid fa-plus"></i>
+              </button>
             </div>
+          </div>
 
-            <div class="gallery-row">
-
-                <div class="gallery-item">
-                    <img src="./images/work-1.png" alt="Structural work">
-                    <div class="gallery-caption">
-                        <div class="gallery-caption-text">
-                            <h4>Steel Framing</h4>
-                            <p>Lorem Ipsum is simply dummy</p>
-                        </div>
-                        <button class="gallery-caption-btn" aria-label="View project">
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="./images/work-2.png" alt="Concrete Repair">
-                    <div class="gallery-caption">
-                        <div class="gallery-caption-text">
-                            <h4>Concrete Repair</h4>
-                            <p>Lorem Ipsum is simply dummy</p>
-                        </div>
-                        <button class="gallery-caption-btn" aria-label="View project">
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="./images/work-3.png" alt="Site supervision">
-                    <div class="gallery-caption">
-                        <div class="gallery-caption-text">
-                            <h4>Site Supervision</h4>
-                            <p>Lorem Ipsum is simply dummy</p>
-                        </div>
-                        <button class="gallery-caption-btn" aria-label="View project">
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
-                </div>
-
+          <div class="gallery-item">
+            <img src="./images/work-2.png" alt="Concrete Repair" />
+            <div class="gallery-caption">
+              <div class="gallery-caption-text">
+                <h4>Concrete Repair</h4>
+                <p>Lorem Ipsum is simply dummy</p>
+              </div>
+              <button class="gallery-caption-btn" aria-label="View project">
+                <i class="fa-solid fa-plus"></i>
+              </button>
             </div>
+          </div>
 
-        </section>
-
-        <section class="stats-section">
-            <div class="stats-row">
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/award.svg" alt="">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>200+</h3>
-                        <p>Winning award</p>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/project.svg" alt="">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>550+</h3>
-                        <p>Project Done</p>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/review.svg" alt="">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>100+</h3>
-                        <p>Clients Review</p>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/team.svg" alt="">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>350+</h3>
-                        <p>Team Member</p>
-                    </div>
-                </div>
-
+          <div class="gallery-item">
+            <img src="./images/work-3.png" alt="Site supervision" />
+            <div class="gallery-caption">
+              <div class="gallery-caption-text">
+                <h4>Site Supervision</h4>
+                <p>Lorem Ipsum is simply dummy</p>
+              </div>
+              <button class="gallery-caption-btn" aria-label="View project">
+                <i class="fa-solid fa-plus"></i>
+              </button>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="team-section">
-
-            <div class="team-header">
-                <span class="eyebrow eyebrow--red">Active Employes</span>
-                <h2 class="section-title section-title--center">Construction Done Right<br>Every Time</h2>
+      <section class="stats-section">
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/award.svg" alt="" />
             </div>
-
-            <div class="team-grid">
-
-                <div class="team-item">
-                    <div class="team-photo">
-                        <img src="./images/mamber-1.png" alt="Albert Flores">
-                    </div>
-                    <div class="team-card">
-                        <div class="social-icons">
-                            <a href="#" class="social-icon-box" aria-label="Facebook"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="Twitter"><i
-                                    class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="LinkedIn"><i
-                                    class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="Pinterest"><i
-                                    class="fa-brands fa-pinterest-p"></i></a>
-                        </div>
-                        <h4 class="team-name">Albert Flores</h4>
-                        <p class="team-role">Pro Trainer</p>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-photo">
-                        <img src="./images/mamber-2.png" alt="Albert Flores">
-                    </div>
-                    <div class="team-card">
-                        <div class="social-icons">
-                            <a href="#" class="social-icon-box" aria-label="Facebook"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="Twitter"><i
-                                    class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="LinkedIn"><i
-                                    class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="Pinterest"><i
-                                    class="fa-brands fa-pinterest-p"></i></a>
-                        </div>
-                        <h4 class="team-name">Courtney Henry</h4>
-                        <p class="team-role">Wall Fixer</p>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-photo">
-                        <img src="./images/mamber-3.png" alt="Albert Flores">
-                    </div>
-                    <div class="team-card">
-                        <div class="social-icons">
-                            <a href="#" class="social-icon-box" aria-label="Facebook"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="Twitter"><i
-                                    class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="LinkedIn"><i
-                                    class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon-box" aria-label="Pinterest"><i
-                                    class="fa-brands fa-pinterest-p"></i></a>
-                        </div>
-                        <h4 class="team-name">Courtney Henry</h4>
-                        <p class="team-role">Design Expert</p>
-                    </div>
-                </div>
-
+            <div class="stat-item-text">
+              <h3>200+</h3>
+              <p>Winning award</p>
             </div>
+          </div>
 
-            <div class="team-dots">
-                <button class="dot dot--active" aria-label="Slide 1"><span></span></button>
-                <button class="dot" aria-label="Slide 2"></button>
-                <button class="dot" aria-label="Slide 3"></button>
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/project.svg" alt="" />
             </div>
-
-        </section>
-
-        <section class="cta-section">
-            <div class="cta-red-bg"></div>
-
-            <div class="cta-container">
-                <div class="cta-left">
-                    <div class="cta-heading">
-                        <h2>Sign Up For news & Get All Updates</h2>
-                    </div>
-                    <div class="cta-text">
-                        <p>It is a long established fact that a reader will be distracted by the</p>
-                    </div>
-                </div>
-
-                <div class="cta-contact">
-                    <div class="cta-contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="cta-contact-text">
-                        <p>Contact with us</p>
-                        <h3>(405) 555-0128</h3>
-                    </div>
-                </div>
+            <div class="stat-item-text">
+              <h3>550+</h3>
+              <p>Project Done</p>
             </div>
-        </section>
+          </div>
 
-        <section class="process-section">
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/review.svg" alt="" />
+            </div>
+            <div class="stat-item-text">
+              <h3>100+</h3>
+              <p>Clients Review</p>
+            </div>
+          </div>
 
-            <div class="process-content">
-                <span class="eyebrow eyebrow--dark eyebrow--start">Working Process</span>
-                <h2 class="section-title">Innovation In Construction<br>At Your Service</h2>
-                <p class="section-text">
-                    It is a long established fact that a reader will be distracted by the readablejk
-                    content of a page when looking at its layout.
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/team.svg" alt="" />
+            </div>
+            <div class="stat-item-text">
+              <h3>350+</h3>
+              <p>Team Member</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section">
+        <div class="team-header">
+          <span class="eyebrow eyebrow--red">Active Employes</span>
+          <h2 class="section-title section-title--center">
+            Construction Done Right<br />Every Time
+          </h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-item">
+            <div class="team-photo">
+              <img src="./images/mamber-1.png" alt="Albert Flores" />
+            </div>
+            <div class="team-card">
+              <div class="social-icons">
+                <a href="#" class="social-icon-box" aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="Pinterest"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></a>
+              </div>
+              <h4 class="team-name">Albert Flores</h4>
+              <p class="team-role">Pro Trainer</p>
+            </div>
+          </div>
+
+          <div class="team-item">
+            <div class="team-photo">
+              <img src="./images/mamber-2.png" alt="Albert Flores" />
+            </div>
+            <div class="team-card">
+              <div class="social-icons">
+                <a href="#" class="social-icon-box" aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="Pinterest"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></a>
+              </div>
+              <h4 class="team-name">Courtney Henry</h4>
+              <p class="team-role">Wall Fixer</p>
+            </div>
+          </div>
+
+          <div class="team-item">
+            <div class="team-photo">
+              <img src="./images/mamber-3.png" alt="Albert Flores" />
+            </div>
+            <div class="team-card">
+              <div class="social-icons">
+                <a href="#" class="social-icon-box" aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icon-box" aria-label="Pinterest"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></a>
+              </div>
+              <h4 class="team-name">Courtney Henry</h4>
+              <p class="team-role">Design Expert</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-dots">
+          <button class="dot dot--active" aria-label="Slide 1">
+            <span></span>
+          </button>
+          <button class="dot" aria-label="Slide 2"></button>
+          <button class="dot" aria-label="Slide 3"></button>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-red-bg"></div>
+
+        <div class="cta-container">
+          <div class="cta-left">
+            <div class="cta-heading">
+              <h2>Sign Up For news & Get All Updates</h2>
+            </div>
+            <div class="cta-text">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the
+              </p>
+            </div>
+          </div>
+
+          <div class="cta-contact">
+            <div class="cta-contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="cta-contact-text">
+              <p>Contact with us</p>
+              <h3>(405) 555-0128</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="process-content">
+          <span class="eyebrow eyebrow--dark eyebrow--start"
+            >Working Process</span
+          >
+          <h2 class="section-title">
+            Innovation In Construction<br />At Your Service
+          </h2>
+          <p class="section-text">
+            It is a long established fact that a reader will be distracted by
+            the readablejk content of a page when looking at its layout.
+          </p>
+          <button class="btn btn-primary process-btn">
+            Read More <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+        <div class="process-list">
+          <div class="process-card">
+            <div class="process-card-info">
+              <div class="process-icon">
+                <img src="./images/site-prep.svg" alt="Site Preparation" />
+              </div>
+              <h4 class="process-title">Site Preparation</h4>
+            </div>
+            <span class="process-number">01</span>
+          </div>
+
+          <div class="connector-wrapper">
+            <svg viewBox="0 0 500 80" preserveAspectRatio="none">
+              <path
+                d="M 400 0 C 400 60, 100 60, 100 80"
+                stroke="#616670"
+                stroke-width="2"
+                stroke-dasharray="5 5"
+                fill="none"
+              />
+            </svg>
+          </div>
+
+          <div class="process-card process-card--offset">
+            <span class="process-number">02</span>
+            <div class="process-card-info">
+              <div class="process-icon">
+                <img src="./images/roofing.svg" alt="Site Preparation" />
+              </div>
+              <h4 class="process-title">Roofing Installation</h4>
+            </div>
+          </div>
+
+          <div class="connector-wrapper">
+            <svg viewBox="0 0 500 80" preserveAspectRatio="none">
+              <path
+                d="M 100 0 C 100 60, 400 60, 400 80"
+                stroke="#616670"
+                stroke-width="2"
+                stroke-dasharray="5 5"
+                fill="none"
+              />
+            </svg>
+          </div>
+
+          <div class="process-card">
+            <div class="process-card-info">
+              <div class="process-icon">
+                <img src="./images/flooring.svg" alt="Site Preparation" />
+              </div>
+              <h4 class="process-title">Flooring Installation</h4>
+            </div>
+            <span class="process-number">03</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="faq-content">
+          <span class="eyebrow eyebrow--red eyebrow--start">Some FAQ</span>
+          <h2 class="section-title">
+            Construction At Your Service A Passion Precision Pride
+          </h2>
+
+          <div class="faq-list">
+            <div class="faq-item is-open">
+              <button class="faq-question" type="button">
+                <span
+                  >What is the typical response time for IT support
+                  requests?</span
+                >
+                <span class="faq-toggle"
+                  ><i class="fa-solid fa-minus"></i
+                ></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable an content of a page when looking at its
+                  layout. Many desktop publishing thre packages and web page
+                  editors
                 </p>
-                <button class="btn btn-primary process-btn">Read More <i class="fa-solid fa-plus"></i></button>
+              </div>
             </div>
 
-            <div class="process-list">
-
-                <div class="process-card">
-                    <div class="process-card-info">
-                        <div class="process-icon">
-                            <img src="./images/site-prep.svg" alt="Site Preparation">
-                        </div>
-                        <h4 class="process-title">Site Preparation</h4>
-                    </div>
-                    <span class="process-number">01</span>
-                </div>
-
-                <div class="connector-wrapper">
-                    <svg viewBox="0 0 500 80" preserveAspectRatio="none">
-                        <path d="M 400 0 C 400 60, 100 60, 100 80" stroke="#616670" stroke-width="2"
-                            stroke-dasharray="5 5" fill="none" />
-                    </svg>
-                </div>
-
-                <div class="process-card process-card--offset">
-                    <span class="process-number">02</span>
-                    <div class="process-card-info">
-                        <div class="process-icon">
-                            <img src="./images/roofing.svg" alt="Site Preparation">
-                        </div>
-                        <h4 class="process-title">Roofing Installation</h4>
-                    </div>
-                </div>
-
-                <div class="connector-wrapper">
-                    <svg viewBox="0 0 500 80" preserveAspectRatio="none">
-                        <path d="M 100 0 C 100 60, 400 60, 400 80" stroke="#616670" stroke-width="2"
-                            stroke-dasharray="5 5" fill="none" />
-                    </svg>
-                </div>
-
-                <div class="process-card">
-                    <div class="process-card-info">
-                        <div class="process-icon">
-                            <img src="./images/flooring.svg" alt="Site Preparation">
-                        </div>
-                        <h4 class="process-title">Flooring Installation</h4>
-                    </div>
-                    <span class="process-number">03</span>
-                </div>
-
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span
+                  >How do you ensure the security and confidentiality of our
+                  data?</span
+                >
+                <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
             </div>
 
-        </section>
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span>What services does your IT company provide?</span>
+                <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <section class="faq-section">
+        <div class="faq-image-group">
+          <img
+            class="faq-img-top"
+            src="./images/worker-1.png"
+            alt="Team discussing plans"
+          />
+          <div class="faq-red-bar"></div>
+          <img
+            class="faq-img-bottom"
+            src="./images/worker-2.png"
+            alt="Workers on site"
+          />
+        </div>
+      </section>
 
-            <div class="faq-content">
-                <span class="eyebrow eyebrow--red eyebrow--start">Some FAQ</span>
-                <h2 class="section-title">Construction At Your Service A Passion Precision Pride</h2>
+      <section class="testimonials-section">
+        <div class="testimonials-header">
+          <span class="eyebrow eyebrow--red">Clients Testimonial</span>
+          <h2 class="section-title section-title--center">
+            Construction That Exceeds<br />Expectations
+          </h2>
+        </div>
 
-                <div class="faq-list">
-
-                    <div class="faq-item is-open">
-                        <button class="faq-question" type="button">
-                            <span>What is the typical response time for IT support requests?</span>
-                            <span class="faq-toggle"><i class="fa-solid fa-minus"></i></span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>It is a long established fact that a reader will be distracted by the readable an content
-                                of a page when looking at its layout. Many desktop publishing thre packages and web page
-                                editors</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">
-                            <span>How do you ensure the security and confidentiality of our data?</span>
-                            <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>It is a long established fact that a reader will be distracted by the
-                                readable content of a page when looking at its layout.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">
-                            <span>What services does your IT company provide?</span>
-                            <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>It is a long established fact that a reader will be distracted by the
-                                readable content of a page when looking at its layout.</p>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="testimonials-row">
+          <div class="testimonial-card">
+            <div class="testimonial-quote-box">
+              <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            </div>
+            <div class="testimonial-head">
+              <img
+                src="./images/f263f0541e7cba601d2e475.png"
+                alt="Savannah Nguyen"
+                class="testimonial-avatar"
+              />
+              <div class="testimonial-info">
+                <h4>Savannah Nguyen</h4>
+                <p>Dog Trainer</p>
+              </div>
             </div>
 
-            <div class="faq-image-group">
-                <img class="faq-img-top" src="./images/worker-1.png" alt="Team discussing plans">
-                <div class="faq-red-bar"></div>
-                <img class="faq-img-bottom" src="./images/worker-2.png" alt="Workers on site">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
 
-        </section>
+            <p class="testimonial-text">
+              There are many variations of passages of lk Lorem Ipsum available,
+              but the majority hjk have suffered alteration in some form, byhl
+              injected humour There are many variations of passages of
+            </p>
+          </div>
 
-        <section class="testimonials-section">
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
 
-            <div class="testimonials-header">
-                <span class="eyebrow eyebrow--red">Clients Testimonial</span>
-                <h2 class="section-title section-title--center">Construction That Exceeds<br>Expectations</h2>
+            <div class="testimonial-head">
+              <img
+                src="./images/ecb27ee9c12b65ad9c.png"
+                alt="Cameron Williamson"
+                class="testimonial-avatar"
+              />
+              <div class="testimonial-info">
+                <h4>Cameron Williamson</h4>
+                <p>Dog Trainer</p>
+              </div>
             </div>
 
-            <div class="testimonials-row">
-
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-box">
-                        <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
-                    </div>
-                    <div class="testimonial-head">
-                        <img src="./images/f263f0541e7cba601d2e475.png" alt="Savannah Nguyen"
-                            class="testimonial-avatar">
-                        <div class="testimonial-info">
-                            <h4>Savannah Nguyen</h4>
-                            <p>Dog Trainer</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <p class="testimonial-text">
-                        There are many variations of passages of lk Lorem Ipsum available, but the
-                        majority hjk have suffered alteration in some form, byhl injected humour There
-                        are many variations of passages of
-                    </p>
-                </div>
-
-                <div class="testimonial-card">
-                    <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
-
-                    <div class="testimonial-head">
-                        <img src="./images/ecb27ee9c12b65ad9c.png" alt="Cameron Williamson" class="testimonial-avatar">
-                        <div class="testimonial-info">
-                            <h4>Cameron Williamson</h4>
-                            <p>Dog Trainer</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <p class="testimonial-text">
-                        There are many variations of passages of lk Lorem Ipsum available, but the
-                        majority hjk have suffered alteration in some form, byhl injected humour There
-                        are many variations of passages of
-                    </p>
-                </div>
-
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
 
-            <div class="team-dots">
-                <button class="dot dot--active" aria-label="Slide 1"><span></span></button>
-                <button class="dot" aria-label="Slide 2"></button>
-                <button class="dot" aria-label="Slide 3"></button>
+            <p class="testimonial-text">
+              There are many variations of passages of lk Lorem Ipsum available,
+              but the majority hjk have suffered alteration in some form, byhl
+              injected humour There are many variations of passages of
+            </p>
+          </div>
+        </div>
+
+        <div class="team-dots">
+          <button class="dot dot--active" aria-label="Slide 1">
+            <span></span>
+          </button>
+          <button class="dot" aria-label="Slide 2"></button>
+          <button class="dot" aria-label="Slide 3"></button>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <img
+          class="contact-image"
+          src="./images/contact-workers.png"
+          alt="Construction workers"
+        />
+
+        <div class="contact-form-wrap">
+          <span class="eyebrow eyebrow--white-red"> Talk With Us </span>
+          <h2 class="section-title section-title--white">
+            Building With Passion Precision<br />And Pride
+          </h2>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" />
+              </div>
             </div>
 
-        </section>
-
-        <section class="contact-section">
-
-            <img class="contact-image" src="./images/contact-workers.png" alt="Construction workers">
-
-            <div class="contact-form-wrap ">
-                <span class="eyebrow eyebrow--white-red">
-                    Talk With Us
-                </span>
-                <h2 class="section-title section-title--white">Building With Passion Precision<br>And Pride</h2>
-
-                <form class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <select>
-                                <option value="" disabled selected>Choose a Option</option>
-                                <option value="residential">Residential</option>
-                                <option value="commercial">Commercial</option>
-                                <option value="renovation">Renovation</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group form-group--full">
-                        <textarea placeholder="Message here.."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Send Now</button>
-                </form>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="tel" placeholder="Phone Number" />
+              </div>
+              <div class="form-group">
+                <select>
+                  <option value="" disabled selected>Choose a Option</option>
+                  <option value="residential">Residential</option>
+                  <option value="commercial">Commercial</option>
+                  <option value="renovation">Renovation</option>
+                </select>
+              </div>
             </div>
 
-        </section>
-
-        <section class="blog-section">
-
-            <div class="blog-header">
-                <div class="blog-heading">
-                    <span class="eyebrow eyebrow--orange eyebrow--start">Blog And News</span>
-                    <h2 class="section-title">Construction Solutions Tailored<br>To Your Needs</h2>
-                </div>
-
-                <div class="recent-work-nav">
-                    <button class="nav-arrow blog-nav-arrow--prev" aria-label="Previous post">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <button class="nav-arrow blog-nav-arrow--next" aria-label="Next post">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
+            <div class="form-group form-group--full">
+              <textarea placeholder="Message here.."></textarea>
             </div>
 
-            <div class="blog-grid">
+            <button type="submit" class="btn btn-primary">Send Now</button>
+          </form>
+        </div>
+      </section>
 
-                <article class="blog-card">
-                    <div>
-                        <img src="./images/blog-1.png" alt="Construction responsible for obtaining permits">
-                    </div>
-                    <div class="blog-card-body">
-                        <div class="blog-meta">
-                            <span><i class="fa-solid fa-user"></i> By admin</span>
-                            <span><i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
-                        </div>
-                        <hr class="blog-divider">
-                        <h4 class="blog-title">Construction responsible for obtaining permits</h4>
-                        <a href="#" class="blog-readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
+      <section class="blog-section">
+        <div class="blog-header">
+          <div class="blog-heading">
+            <span class="eyebrow eyebrow--orange eyebrow--start"
+              >Blog And News</span
+            >
+            <h2 class="section-title">
+              Construction Solutions Tailored<br />To Your Needs
+            </h2>
+          </div>
 
-                <article class="blog-card">
-                    <div>
-                        <img src="./images/blog-2.png" alt="Choose the right construction company for my project">
-                    </div>
-                    <div class="blog-card-body">
-                        <div class="blog-meta">
-                            <span><i class="fa-solid fa-user"></i> By admin</span>
-                            <span><i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
-                        </div>
-                        <hr class="blog-divider">
-                        <h4 class="blog-title">Choose the right construction company for my project</h4>
-                        <a href="#" class="blog-readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
+          <div class="recent-work-nav">
+            <button
+              class="nav-arrow blog-nav-arrow--prev"
+              aria-label="Previous post"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              class="nav-arrow blog-nav-arrow--next"
+              aria-label="Next post"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
 
-                <article class="blog-card">
-                    <div>
-                        <img src="./images/blog-3.png" alt="Safety measures are taken during construction projects">
-                    </div>
-                    <div class="blog-card-body">
-                        <div class="blog-meta">
-                            <span><i class="fa-solid fa-user"></i> By admin</span>
-                            <span><i class="fa-solid fa-calendar-days"></i> October 19, 2022</span>
-                        </div>
-                        <hr class="blog-divider">
-                        <h4 class="blog-title">Safety measures are taken during construction projects</h4>
-                        <a href="#" class="blog-readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div>
+              <img
+                src="./images/blog-1.png"
+                alt="Construction responsible for obtaining permits"
+              />
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="fa-solid fa-user"></i> By admin</span>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> October 19,
+                  2022</span
+                >
+              </div>
+              <hr class="blog-divider" />
+              <h4 class="blog-title">
+                Construction responsible for obtaining permits
+              </h4>
+              <a href="#" class="blog-readmore"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
 
+          <article class="blog-card">
+            <div>
+              <img
+                src="./images/blog-2.png"
+                alt="Choose the right construction company for my project"
+              />
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="fa-solid fa-user"></i> By admin</span>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> October 19,
+                  2022</span
+                >
+              </div>
+              <hr class="blog-divider" />
+              <h4 class="blog-title">
+                Choose the right construction company for my project
+              </h4>
+              <a href="#" class="blog-readmore"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div>
+              <img
+                src="./images/blog-3.png"
+                alt="Safety measures are taken during construction projects"
+              />
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="fa-solid fa-user"></i> By admin</span>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> October 19,
+                  2022</span
+                >
+              </div>
+              <hr class="blog-divider" />
+              <h4 class="blog-title">
+                Safety measures are taken during construction projects
+              </h4>
+              <a href="#" class="blog-readmore"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-col footer-col--about">
+            <div class="logo">
+              <div class="logo-icon">
+                <img src="./images/logo.png" alt="SteelCity logo" />
+              </div>
+              <div class="logo-text">SteelCity</div>
             </div>
 
-        </section>
+            <p class="footer-about-text">
+              Lorem Ipsum is simply is dumi omy is text Loremo Ipsum is simply
+              is out no our o dummy text.
+            </p>
 
-        <footer class="site-footer">
+            <div class="footer-socials">
+              <a href="#" class="footer-social-icon" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-social-icon" aria-label="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="footer-social-icon" aria-label="Pinterest"
+                ><i class="fa-brands fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
 
-            <div class="footer-top">
+          <div class="footer-col footer-col--links">
+            <h4 class="footer-heading">Get Free Link</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> Software
+                  Development</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> Data Analytics</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> IT Consulting</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> UI/UX Design</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> Network
+                  Solutions</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i> Others</a>
+              </li>
+            </ul>
+          </div>
 
-                <div class="footer-col footer-col--about">
+          <div class="footer-col footer-col--address">
+            <h4 class="footer-heading">Address</h4>
 
-                    <div class="logo">
-                        <div class="logo-icon"><img src="./images/logo.png" alt="SteelCity logo"></div>
-                        <div class="logo-text">SteelCity</div>
-                    </div>
-
-                    <p class="footer-about-text">
-                        Lorem Ipsum is simply is dumi omy is text Loremo Ipsum is simply is out no our o
-                        dummy text.
-                    </p>
-
-                    <div class="footer-socials">
-                        <a href="#" class="footer-social-icon" aria-label="Facebook"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="footer-social-icon" aria-label="Twitter"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="footer-social-icon" aria-label="Instagram"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="footer-social-icon" aria-label="Pinterest"><i
-                                class="fa-brands fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col footer-col--links">
-                    <h4 class="footer-heading">Get Free Link</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Software Development</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Data Analytics</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> IT Consulting</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> UI/UX Design</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Network Solutions</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Others</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col footer-col--address">
-                    <h4 class="footer-heading">Address</h4>
-
-                    <div class="footer-contact-row">
-                        <span class="footer-contact-icon"><i class="fa-solid fa-location-arrow"></i></span>
-                        <p>2972 Westheimer Rd.<br>Santa Ana, Illinois 85486</p>
-                    </div>
-
-                    <div class="footer-contact-row">
-                        <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
-                        <p>debbie.baker@example.com<br>nevaeh.simm@example.com</p>
-                    </div>
-
-                    <div class="footer-contact-row">
-                        <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
-                        <p>(405) 555-0128<br>(629) 555-0129</p>
-                    </div>
-                </div>
-
-                <div class="footer-col footer-col--newsletter">
-                    <h4 class="footer-heading">Newsletter</h4>
-                    <p class="footer-about-text">Lorem Ipsum is simply is dumi omy is text Loremo Ipsum</p>
-
-                    <form class="footer-newsletter-form">
-                        <input type="email" placeholder="Your E-mail Address...">
-                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
-                </div>
-
+            <div class="footer-contact-row">
+              <span class="footer-contact-icon"
+                ><i class="fa-solid fa-location-arrow"></i
+              ></span>
+              <p>2972 Westheimer Rd.<br />Santa Ana, Illinois 85486</p>
             </div>
 
-            <div class="footer-bottom">
-                <div>
-                    <p>&copy; Yoursitename &nbsp;2023 | All Rights Reserved</p>
-                </div>
-                <div class="footer-bottom-links">
-                    <a href="#">Trams &amp; Condition</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Contact Us</a>
-                </div>
+            <div class="footer-contact-row">
+              <span class="footer-contact-icon"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+              <p>debbie.baker@example.com<br />nevaeh.simm@example.com</p>
             </div>
 
-        </footer>
+            <div class="footer-contact-row">
+              <span class="footer-contact-icon"
+                ><i class="fa-solid fa-phone"></i
+              ></span>
+              <p>(405) 555-0128<br />(629) 555-0129</p>
+            </div>
+          </div>
 
+          <div class="footer-col footer-col--newsletter">
+            <h4 class="footer-heading">Newsletter</h4>
+            <p class="footer-about-text">
+              Lorem Ipsum is simply is dumi omy is text Loremo Ipsum
+            </p>
+
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Your E-mail Address..." />
+              <button type="submit" aria-label="Subscribe">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            <p>&copy; Yoursitename &nbsp;2023 | All Rights Reserved</p>
+          </div>
+          <div class="footer-bottom-links">
+            <a href="#">Trams &amp; Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </footer>
     </main>
+  </body>
 
-</body>
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const navMenu = document.getElementById("nav-menu");
 
-<script>
-    const menuBtn = document.getElementById('menu-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        navMenu.classList.toggle('active');
+    menuBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      navMenu.classList.toggle("active");
     });
 
-    navMenu.addEventListener('click', (e) => {
-        e.stopPropagation();
+    navMenu.addEventListener("click", (e) => {
+      e.stopPropagation();
     });
 
-    document.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-        }
+    document.addEventListener("click", () => {
+      if (navMenu.classList.contains("active")) {
+        navMenu.classList.remove("active");
+      }
     });
 
-    document.querySelectorAll('.faq-question').forEach((btn) => {
-        btn.addEventListener('click', () => {
-            const item = btn.closest('.faq-item');
-            const wasOpen = item.classList.contains('is-open');
+    document.querySelectorAll(".faq-question").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const item = btn.closest(".faq-item");
+        const wasOpen = item.classList.contains("is-open");
 
-            document.querySelectorAll('.faq-item').forEach((el) => {
-                el.classList.remove('is-open');
-                el.querySelector('.faq-toggle i').className = 'fa-solid fa-plus';
-            });
-
-            if (!wasOpen) {
-                item.classList.add('is-open');
-                item.querySelector('.faq-toggle i').className = 'fa-solid fa-minus';
-            }
+        document.querySelectorAll(".faq-item").forEach((el) => {
+          el.classList.remove("is-open");
+          el.querySelector(".faq-toggle i").className = "fa-solid fa-plus";
         });
-    });
-</script>
 
+        if (!wasOpen) {
+          item.classList.add("is-open");
+          item.querySelector(".faq-toggle i").className = "fa-solid fa-minus";
+        }
+      });
+    });
+  </script>
 </html>

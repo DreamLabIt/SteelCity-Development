@@ -1,430 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SteelCity Development</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Your CSS -->
-    <link rel="stylesheet" href="style/style.css">
-</head>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <main>
+      <nav class="navbar navbar--page">
+        <div class="logo">
+          <div class="logo-icon">
+            <img src="./images/logo.png" alt="SteelCity logo" />
+          </div>
+          <div class="logo-text">SteelCity</div>
+        </div>
 
-        <nav class="navbar navbar--page">
-            <div class="logo">
-                <div class="logo-icon"><img src="./images/logo.png" alt="SteelCity logo"></div>
-                <div class="logo-text">SteelCity</div>
+        <ul class="menu" id="nav-menu">
+          <li>
+            <a href="/index.html">Home</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/about.html">About Us</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/service.html">Services</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/project.html">Projects</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/team.html">Page</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a
+            ><i class="fa-solid fa-chevron-down"></i>
+          </li>
+        </ul>
+
+        <div class="right-side nave-right-side">
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+
+          <a href="tel:+18085550111" class="navbar-cta">
+            <span class="navbar-cta-icon"
+              ><i class="fa-solid fa-phone"></i
+            ></span>
+            <span class="navbar-cta-text">
+              <span class="navbar-cta-label">Need help?</span>
+              <span class="navbar-cta-number">(808) 555-0111</span>
+            </span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            id="menu-btn"
+            aria-label="Toggle Navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <section class="page-hero">
+        <img class="page-hero-bg" src="./images/BG.png" alt="" />
+
+        <div class="page-hero-content">
+          <h1 class="section-title section-title--white page-hero-title">
+            About Us
+          </h1>
+
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>About Us</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-services-section page-about">
+        <div class="about-block about-content-page">
+          <div class="about-image">
+            <img src="./images/about-workers.png" alt="Construction workers" />
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <img src="./images/delivery.svg" alt="" />
+              </div>
+              <div class="stat-info">
+                <h3>4k+</h3>
+                <p>Daily Activate Customer</p>
+              </div>
             </div>
+          </div>
 
-            <ul class="menu" id="nav-menu">
-                <li><a href="/index.html">Home</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/about.html">About Us</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/service.html">Services</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/project.html">Projects</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/blog.html">Blog</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="#">Page</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="/contact.html">Contact</a><i class="fa-solid fa-chevron-down"></i></li>
+          <div class="about-content">
+            <span class="eyebrow eyebrow--red">About Us</span>
+            <h2 class="section-title">
+              Transforming Spaces<br />Creating Memories
+            </h2>
+            <p class="section-text">
+              It is a long established fact that a reader will be distracted by
+              the readablejk content of a page when looking at its layout. Lorem
+              Ipsum is simply dummyj
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon"
+                  ><i class="fa-solid fa-angles-right"></i
+                ></span>
+                <div class="feature-text">
+                  <h4>Roof Repair</h4>
+                  <p>
+                    It is a long established fact that a reader will distracted
+                    by the readablejk content of a page when looking at its
+                    layout.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item feature-item-b">
+                <span class="feature-icon"
+                  ><i class="fa-solid fa-angles-right"></i
+                ></span>
+                <div class="feature-text">
+                  <h4>Plumbing Installation</h4>
+                  <p>
+                    It is a long established fact that a reder will istracted by
+                    the readablejk content of page when looking at its layout.
+                  </p>
+                </div>
+              </li>
             </ul>
+          </div>
+        </div>
+      </section>
 
-            <div class="right-side  nave-right-side">
-                <div class="socials">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+      <section class="cta-section">
+        <div class="cta-red-bg"></div>
 
-                <a href="tel:+18085550111" class="navbar-cta">
-                    <span class="navbar-cta-icon"><i class="fa-solid fa-phone"></i></span>
-                    <span class="navbar-cta-text">
-                        <span class="navbar-cta-label">Need help?</span>
-                        <span class="navbar-cta-number">(808) 555-0111</span>
-                    </span>
-                </a>
-
-                <button class="menu-toggle" id="menu-btn" aria-label="Toggle Navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+        <div class="cta-container">
+          <div class="cta-left">
+            <div class="cta-heading">
+              <h2>Sign Up For news & Get All Updates</h2>
             </div>
-        </nav>
-
-        <section class="page-hero">
-            <img class="page-hero-bg" src="./images/BG.png" alt="">
-
-            <div class="page-hero-content">
-                <h1 class="section-title section-title--white page-hero-title">About Us</h1>
-
-                <div class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <span>About Us</span>
-                </div>
+            <div class="cta-text">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the
+              </p>
             </div>
-        </section>
+          </div>
 
-        <section class="about-services-section page-about">
-
-            <div class="about-block about-content-page">
-
-                <div class="about-image">
-                    <img src="./images/about-workers.png" alt="Construction workers">
-
-                    <div class="stat-card">
-                        <div class="stat-icon"><img src="./images/delivery.svg" alt=""></div>
-                        <div class="stat-info">
-                            <h3>4k+</h3>
-                            <p>Daily Activate Customer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-content">
-                    <span class="eyebrow eyebrow--red">About Us</span>
-                    <h2 class="section-title">Transforming Spaces<br>Creating Memories</h2>
-                    <p class="section-text">
-                        It is a long established fact that a reader will be distracted by the readablejk
-                        content of a page when looking at its layout. Lorem Ipsum is simply dummyj
-                    </p>
-
-                    <ul class="feature-list">
-                        <li class="feature-item">
-                            <span class="feature-icon"><i class="fa-solid fa-angles-right"></i></span>
-                            <div class="feature-text">
-                                <h4>Roof Repair</h4>
-                                <p>It is a long established fact that a reader will distracted by the
-                                    readablejk content of a page when looking at its layout.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item  feature-item-b ">
-                            <span class="feature-icon"><i class="fa-solid fa-angles-right"></i></span>
-                            <div class="feature-text">
-                                <h4>Plumbing Installation</h4>
-                                <p>It is a long established fact that a reder will istracted by the
-                                    readablejk content of page when looking at its layout.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
+          <div class="cta-contact">
+            <div class="cta-contact-icon">
+              <i class="fa-solid fa-phone"></i>
             </div>
-
-        </section>
-
-        <section class="cta-section">
-            <div class="cta-red-bg"></div>
-
-            <div class="cta-container">
-                <div class="cta-left">
-                    <div class="cta-heading">
-                        <h2>Sign Up For news & Get All Updates</h2>
-                    </div>
-                    <div class="cta-text">
-                        <p>It is a long established fact that a reader will be distracted by the</p>
-                    </div>
-                </div>
-
-                <div class="cta-contact">
-                    <div class="cta-contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="cta-contact-text">
-                        <p>Contact with us</p>
-                        <h3>(405) 555-0128</h3>
-                    </div>
-                </div>
+            <div class="cta-contact-text">
+              <p>Contact with us</p>
+              <h3>(405) 555-0128</h3>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="stats-section about-stats">
-            <div class="stats-row">
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/order.svg" alt="Winning award">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>200+</h3>
-                        <p>Winning award</p>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/group.svg" alt="Project Done">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>550+</h3>
-                        <p>Project Done</p>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/red-ship.svg" alt="Clients Review">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>100+</h3>
-                        <p>Clients Review</p>
-                    </div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-item-icon">
-                        <img src="./images/red-shipping.svg" alt="Team Member">
-                    </div>
-                    <div class="stat-item-text">
-                        <h3>350+</h3>
-                        <p>Team Member</p>
-                    </div>
-                </div>
-
+      <section class="stats-section about-stats">
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/order.svg" alt="Winning award" />
             </div>
-        </section>
-
-        <section class="testimonial-section">
-            <div class="testimonial-container">
-
-                <div class="testimonial-quote-box ">
-                    <i class="fa-solid fa-quote-right testimonial-quote-icon about-quote-box-rigth"></i>
-                </div>
-
-                <div class="testimonial-quote-box ">
-                    <i class="fa-solid fa-quote-right testimonial-quote-icon about-quote-box-left"></i>
-                </div>
-
-                <button class="testimonial-nav prev-btn" id="prevBtn" aria-label="Previous Testimonial">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-
-                <div class="testimonial-content">
-
-                    <div class="testimonial-tab active" data-index="0">
-                        <div class="author-avatar">
-                            <img src="./images/mamber-3.png" alt="Savannah Nguyen" class="testimonial-avatar">
-                        </div>
-                        <h3 class="author-name">Cameron Williamson</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            Et nunc purus purus egestas. Nisi ultrices morbi dui placerat nisi enim pharetra. Quis
-                            volutpat potenti vitae faucibus suscipit sapien vulputat Et nunc purus purus suscipit
-                            sapien
-                            vulputat Et nunc purus purus
-                        </p>
-                    </div>
-
-                    <div class="testimonial-tab" data-index="1">
-                        <div class="author-avatar">
-                            <img src="./images/mamber-2.png" alt="Cameron Williamson" class="testimonial-avatar">
-                        </div>
-                        <h3 class="author-name">Robert Fox</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            Aliquam eros justo, posuere lobortis viverra laoreet mattis ullamcorper posuere viverra.
-                            Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper
-                            viverra.
-                        </p>
-                    </div>
-
-                    <div class="testimonial-tab" data-index="2">
-                        <div class="author-avatar">
-                            <img src="images/mamber-1.png" alt="Esther Howard">
-                        </div>
-                        <h3 class="author-name">Esther Howard</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            Laoreet matti ullamc orper Aliquam eros justo, posuere lobortis posu ere vi. Aliquam
-                            eros
-                            justo, posuere Aliquam eros justo, pa loborti viverra laoreet augue.
-                        </p>
-                    </div>
-
-                </div>
-
-                <button class="testimonial-nav next-btn" id="nextBtn" aria-label="Next Testimonial">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
+            <div class="stat-item-text">
+              <h3>200+</h3>
+              <p>Winning award</p>
             </div>
-        </section>
+          </div>
 
-        <section class="call-banner-section">
-            <div class="call-banner-img">
-                <img src="images/worker.png" alt="Need Help">
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/group.svg" alt="Project Done" />
+            </div>
+            <div class="stat-item-text">
+              <h3>550+</h3>
+              <p>Project Done</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/red-ship.svg" alt="Clients Review" />
+            </div>
+            <div class="stat-item-text">
+              <h3>100+</h3>
+              <p>Clients Review</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item-icon">
+              <img src="./images/red-shipping.svg" alt="Team Member" />
+            </div>
+            <div class="stat-item-text">
+              <h3>350+</h3>
+              <p>Team Member</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="testimonial-container">
+          <div class="testimonial-quote-box">
+            <i
+              class="fa-solid fa-quote-right testimonial-quote-icon about-quote-box-rigth"
+            ></i>
+          </div>
+
+          <div class="testimonial-quote-box">
+            <i
+              class="fa-solid fa-quote-right testimonial-quote-icon about-quote-box-left"
+            ></i>
+          </div>
+
+          <button
+            class="testimonial-nav prev-btn"
+            id="prevBtn"
+            aria-label="Previous Testimonial"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="testimonial-content">
+            <div class="testimonial-tab active" data-index="0">
+              <div class="author-avatar">
+                <img
+                  src="./images/mamber-3.png"
+                  alt="Savannah Nguyen"
+                  class="testimonial-avatar"
+                />
+              </div>
+              <h3 class="author-name">Cameron Williamson</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Et nunc purus purus egestas. Nisi ultrices morbi dui placerat
+                nisi enim pharetra. Quis volutpat potenti vitae faucibus
+                suscipit sapien vulputat Et nunc purus purus suscipit sapien
+                vulputat Et nunc purus purus
+              </p>
             </div>
 
-            <div class="call-banner-content">
-                <div class="call-banner-icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-
-                <div class="call-banner-text">
-                    <h2>Need Help? Call Us Today +201- 555-0124</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing</p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="site-footer site-footer--page">
-
-            <div class="footer-top">
-
-                <div class="footer-col footer-col--about">
-                    <div class="logo">
-                        <div class="logo-icon"><img src="./images/logo.png" alt="SteelCity logo"></div>
-                        <div class="logo-text">SteelCity</div>
-                    </div>
-
-                    <p class="footer-about-text">
-                        Lorem Ipsum is simply is dumi omy is text Loremo Ipsum is simply is out no our o dummy text.
-                    </p>
-
-                    <div class="footer-socials">
-                        <a href="#" class="footer-social-icon" aria-label="Facebook"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="footer-social-icon" aria-label="Instagram"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="footer-social-icon" aria-label="Twitter"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="footer-social-icon" aria-label="LinkedIn"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col footer-col--services">
-                    <h4 class="footer-heading">Our Services</h4>
-                    <ul class="footer-links footer-links--simple">
-                        <li><a href="#">Tech Solutions</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">IT Consulting</a></li>
-                        <li><a href="#">Data Analytics</a></li>
-                        <li><a href="#">Others Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col footer-col--links">
-                    <h4 class="footer-heading">Get Free Link</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Software Development</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Data Analytics</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> IT Consulting</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> UI/UX Design</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Network Solutions</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Others</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col footer-col--gallery">
-                    <h4 class="footer-heading">Photo Gallery</h4>
-                    <div class="footer-gallery-grid">
-                        <a href="#" class="footer-gallery-item"><img src="./images/work-1.png" alt="Gallery 1"></a>
-                        <a href="#" class="footer-gallery-item"><img src="./images/work-2.png" alt="Gallery 2"></a>
-                        <a href="#" class="footer-gallery-item"><img src="./images/work-3.png" alt="Gallery 3"></a>
-                        <a href="#" class="footer-gallery-item"><img src="./images/worker-1.png" alt="Gallery 4"></a>
-                        <a href="#" class="footer-gallery-item"><img src="./images/workers-hexagon.png"
-                                alt="Gallery 5"></a>
-                        <a href="#" class="footer-gallery-item"><img src="./images/contact-workers.png"
-                                alt="Gallery 6"></a>
-                    </div>
-                </div>
-
+            <div class="testimonial-tab" data-index="1">
+              <div class="author-avatar">
+                <img
+                  src="./images/mamber-2.png"
+                  alt="Cameron Williamson"
+                  class="testimonial-avatar"
+                />
+              </div>
+              <h3 class="author-name">Robert Fox</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Aliquam eros justo, posuere lobortis viverra laoreet mattis
+                ullamcorper posuere viverra. Aliquam eros justo, posuere
+                lobortis viverra laoreet augue mattis fmentum ullamcorper
+                viverra.
+              </p>
             </div>
 
-            <div class="footer-bottom">
-                <div>
-                    <p>&copy; Yoursitename 2023 | All Rights Reserved</p>
-                </div>
-                <div class="footer-bottom-links">
-                    <a href="#">Trams &amp; Condition</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Contact Us</a>
-                </div>
+            <div class="testimonial-tab" data-index="2">
+              <div class="author-avatar">
+                <img src="images/mamber-1.png" alt="Esther Howard" />
+              </div>
+              <h3 class="author-name">Esther Howard</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                Laoreet matti ullamc orper Aliquam eros justo, posuere lobortis
+                posu ere vi. Aliquam eros justo, posuere Aliquam eros justo, pa
+                loborti viverra laoreet augue.
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="testimonial-nav next-btn"
+            id="nextBtn"
+            aria-label="Next Testimonial"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="call-banner-section">
+        <div class="call-banner-img">
+          <img src="images/worker.png" alt="Need Help" />
+        </div>
+
+        <div class="call-banner-content">
+          <div class="call-banner-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div class="call-banner-text">
+            <h2>Need Help? Call Us Today +201- 555-0124</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer site-footer--page">
+        <div class="footer-top">
+          <div class="footer-col footer-col--about">
+            <div class="logo">
+              <div class="logo-icon">
+                <img src="./images/logo.png" alt="SteelCity logo" />
+              </div>
+              <div class="logo-text">SteelCity</div>
             </div>
 
-        </footer>
+            <p class="footer-about-text">
+              Lorem Ipsum is simply is dumi omy is text Loremo Ipsum is simply
+              is out no our o dummy text.
+            </p>
 
+            <div class="footer-socials">
+              <a href="#" class="footer-social-icon" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="footer-social-icon" aria-label="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="footer-social-icon" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col--services">
+            <h4 class="footer-heading">Our Services</h4>
+            <ul class="footer-links footer-links--simple">
+              <li><a href="#">Tech Solutions</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">IT Consulting</a></li>
+              <li><a href="#">Data Analytics</a></li>
+              <li><a href="#">Others Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-col--links">
+            <h4 class="footer-heading">Get Free Link</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> Software
+                  Development</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> Data Analytics</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> IT Consulting</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> UI/UX Design</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chevron-right"></i> Network
+                  Solutions</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i> Others</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-col--gallery">
+            <h4 class="footer-heading">Photo Gallery</h4>
+            <div class="footer-gallery-grid">
+              <a href="#" class="footer-gallery-item"
+                ><img src="./images/work-1.png" alt="Gallery 1"
+              /></a>
+              <a href="#" class="footer-gallery-item"
+                ><img src="./images/work-2.png" alt="Gallery 2"
+              /></a>
+              <a href="#" class="footer-gallery-item"
+                ><img src="./images/work-3.png" alt="Gallery 3"
+              /></a>
+              <a href="#" class="footer-gallery-item"
+                ><img src="./images/worker-1.png" alt="Gallery 4"
+              /></a>
+              <a href="#" class="footer-gallery-item"
+                ><img src="./images/workers-hexagon.png" alt="Gallery 5"
+              /></a>
+              <a href="#" class="footer-gallery-item"
+                ><img src="./images/contact-workers.png" alt="Gallery 6"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            <p>&copy; Yoursitename 2023 | All Rights Reserved</p>
+          </div>
+          <div class="footer-bottom-links">
+            <a href="#">Trams &amp; Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </footer>
     </main>
+  </body>
 
-</body>
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const navMenu = document.getElementById("nav-menu");
 
-<script>
-    const menuBtn = document.getElementById('menu-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        navMenu.classList.toggle('active');
+    menuBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      navMenu.classList.toggle("active");
     });
 
-    navMenu.addEventListener('click', (e) => {
-        e.stopPropagation();
+    navMenu.addEventListener("click", (e) => {
+      e.stopPropagation();
     });
 
-    document.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-        }
+    document.addEventListener("click", () => {
+      if (navMenu.classList.contains("active")) {
+        navMenu.classList.remove("active");
+      }
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const tabs = document.querySelectorAll('.testimonial-tab');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        let currentIndex = 0;
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabs = document.querySelectorAll(".testimonial-tab");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      let currentIndex = 0;
 
-        function showTab(index) {
-            tabs.forEach((tab, i) => {
-                if (i === index) {
-                    tab.classList.add('active');
-                } else {
-                    tab.classList.remove('active');
-                }
-            });
-        }
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex === 0) ? tabs.length - 1 : currentIndex - 1;
-            showTab(currentIndex);
+      function showTab(index) {
+        tabs.forEach((tab, i) => {
+          if (i === index) {
+            tab.classList.add("active");
+          } else {
+            tab.classList.remove("active");
+          }
         });
+      }
 
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex === tabs.length - 1) ? 0 : currentIndex + 1;
-            showTab(currentIndex);
-        });
+      prevBtn.addEventListener("click", () => {
+        currentIndex = currentIndex === 0 ? tabs.length - 1 : currentIndex - 1;
+        showTab(currentIndex);
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = currentIndex === tabs.length - 1 ? 0 : currentIndex + 1;
+        showTab(currentIndex);
+      });
     });
-</script>
-
+  </script>
 </html>
