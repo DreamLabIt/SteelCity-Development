@@ -1,58 +1,59 @@
-@import url('navbar.css');
-@import url('button.css');
-@import url('eyebrow.css');
-@import url('hero.css');
-@import url('about-services.css');
-@import url('recent-work.css');
-@import url('stats.css');
-@import url('team.css');
-@import url('cta.css');
-@import url('process.css');
-@import url('faq.css');
-@import url('testimonials.css');
-@import url('contact.css');
-@import url('blog.css');
-@import url('footer.css');
-@import url('page-hero.css');
-@import url('map.css');
-@import url('call-banner.css');
-@import url('profile.css');
-@import url('blog_classic.css');
-@import url('blog-details.css');
-@import url('services.css');
-@import url('service-details.css');
-@import url('project.css');
+@import url("navbar.css");
+@import url("button.css");
+@import url("eyebrow.css");
+@import url("hero.css");
+@import url("about-services.css");
+@import url("recent-work.css");
+@import url("stats.css");
+@import url("team.css");
+@import url("cta.css");
+@import url("process.css");
+@import url("faq.css");
+@import url("testimonials.css");
+@import url("contact.css");
+@import url("blog.css");
+@import url("footer.css");
+@import url("page-hero.css");
+@import url("map.css");
+@import url("call-banner.css");
+@import url("profile.css");
+@import url("blog_classic.css");
+@import url("blog-details.css");
+@import url("services.css");
+@import url("service-details.css");
+@import url("project.css");
+@import url("subscribe.css");
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary-color: #DF2339;
-    --primary-hover: #c81f33;
-    --text-dark: #171717;
-    --text-light: #616670;
-    --bg-light: #F3F3F3;
-    --white: #ffffff;
-    --text-secondary: #333F4D;
-    --heading-font: 'Rajdhani', sans-serif;
-    --body-font: 'Rubik', sans-serif;
-    --transition: all 0.3s ease;
+  --primary-color: #df2339;
+  --primary-hover: #c81f33;
+  --text-dark: #171717;
+  --text-light: #616670;
+  --bg-light: #f3f3f3;
+  --white: #ffffff;
+  --text-secondary: #333f4d;
+  --heading-font: "Rajdhani", sans-serif;
+  --body-font: "Rubik", sans-serif;
+  --transition: all 0.3s ease;
 }
 
 body {
-    font-family: var(--main-font);
-    background-color: var(--white);
-    color: var(--text-dark);
-    overflow-x: hidden;
+  font-family: var(--main-font);
+  background-color: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
 }
 
 main {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
