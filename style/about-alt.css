@@ -1,0 +1,157 @@
+.about-alt-section {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.about-alt-images {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 910px;
+  height: 698px;
+}
+
+.about-alt-img-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 618px;
+  max-width: 862px;
+}
+
+.about-alt-img-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-alt-img-sub {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 351px;
+  max-width: 428px;
+}
+
+.about-alt-img-sub img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-alt-badge {
+  position: absolute;
+  top: 35%;
+  left: 48%;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 170px;
+  height: 170px;
+  border: 4px solid #ffffff;
+}
+
+.alt-badge-about {
+  background: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  opacity: 1;
+  border-style: dashed;
+}
+
+.about-alt-badge-num {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.about-alt-badge-text {
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.about-alt-container {
+  position: relative;
+  z-index: 1;
+  width: 1290px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.about-alt-content {
+  width: 100%;
+  max-width: 630px;
+}
+
+.about-alt-desc {
+  color: #616670;
+  margin: 20px 0px 30px 0px;
+}
+
+.about-alt-checklist {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-alt-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: var(--text-dark);
+}
+
+.about-alt-checklist i {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-alt-btn.btn {
+  width: 178px;
+}
