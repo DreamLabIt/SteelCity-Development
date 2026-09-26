@@ -262,7 +262,8 @@
 }
 
 .blog-promo-body {
-  padding: 20px 40px;
+  padding: 20px;
+  padding-left: 40px;
 }
 
 .blog-promo-meta {
@@ -279,7 +280,7 @@
 }
 
 .blog-promo-meta i {
-  color: var(--primary-color);
+  color: var(--text-light);
   margin-right: 10px;
 }
 
