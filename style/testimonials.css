@@ -602,3 +602,128 @@
   text-align: center;
   color: var(--text-light);
 }
+
+@media (max-width: 1340px) {
+  .testimonial-promo-header,
+  .testimonial-alt-grid {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .testimonial-promo-section {
+    padding-top: 60px;
+  }
+
+  .testimonial-alt-grid {
+    gap: 20px;
+  }
+
+  .testimonial-alt-card {
+    padding: 35px 25px 35px 25px;
+    padding-top: 90px;
+  }
+
+  .testimonial-alt-photo {
+    width: 130px;
+    height: 130px;
+    top: -65px;
+  }
+
+  .testimonial-alt-text {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .testimonial-promo-section {
+    padding-top: 80px;
+  }
+
+  .testimonial-promo-header {
+    margin-bottom: 80px;
+  }
+
+  .testimonial-alt-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .testimonial-alt-card {
+    max-width: 630px;
+    width: 100%;
+  }
+
+  .testimonial-alt-photo {
+    width: 140px;
+    height: 140px;
+    top: -70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-promo-header {
+    margin-bottom: 70px;
+  }
+
+  .testimonial-alt-name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .testimonial-alt-role {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-promo-section {
+    padding-top: 60px;
+  }
+
+  .testimonial-promo-header {
+    margin-bottom: 60px;
+    padding: 0 15px;
+  }
+
+  .testimonial-alt-grid {
+    padding: 0 15px;
+    gap: 80px;
+  }
+
+  .testimonial-alt-card {
+    padding: 20px 15px;
+    padding-top: 65px;
+  }
+
+  .testimonial-alt-photo {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .testimonial-alt-photo img {
+    top: -5px;
+    left: -5px;
+  }
+
+  .testimonial-alt-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-alt-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .testimonial-alt-role {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
