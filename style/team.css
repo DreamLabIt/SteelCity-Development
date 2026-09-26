@@ -260,7 +260,7 @@
 
 .emp-team-wrapper {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 30px;
   width: 100%;
   padding-left: calc((100% - 1290px) / 2);
@@ -283,8 +283,8 @@
   line-height: 30px;
   letter-spacing: 0px;
   color: #616670;
-  margin-top: -40px;
-  margin-bottom: 40px;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .emp-team-watermark {
@@ -299,8 +299,8 @@
   white-space: nowrap;
   pointer-events: none;
   z-index: -1;
-  margin-top: 70px;
-  opacity: 20%;
+  margin-top: 50px;
+  opacity: 0.2;
 }
 
 .emp-team-cards-container {
@@ -308,6 +308,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .emp-team-cards-track {
@@ -319,27 +320,27 @@
 .emp-team-card {
   width: 100%;
   max-width: 410px;
-  height: 559px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  min-height: 520px;
   background: #ffffff;
   border: 1px solid #e3e3e3;
   border-radius: 6px;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  flex-shrink: 0;
 }
 
 .emp-team-img-box {
   position: relative;
   width: 100%;
-  max-width: 410px;
-  height: 402px;
+  height: 380px;
 }
 
 .emp-team-img-box img {
   width: 100%;
-  max-width: 410px;
   height: 100%;
   object-fit: cover;
   display: block;
@@ -347,18 +348,19 @@
 
 .emp-team-social-box {
   position: absolute;
-  bottom: -55px;
+  bottom: -60px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: calc(100% - 60px);
   max-width: 290px;
   background: #e63946;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 11px;
+  opacity: 0;
   visibility: hidden;
   transition:
     bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1),
@@ -389,7 +391,7 @@
 }
 
 .emp-team-info {
-  padding: 40px 15px 20px 15px;
+  padding: 35px 15px 20px 15px;
   text-align: center;
   background: #ffffff;
 }
@@ -399,21 +401,19 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  letter-spacing: 0px;
   text-align: center;
   color: #171717;
-  margin-bottom: 10px;
+  margin: 0 0 8px 0;
 }
 
 .emp-team-info p {
   font-family: var(--body-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0px;
+  line-height: 26px;
   text-align: center;
-
   color: #616670;
+  margin: 0;
 }
 
 .emp-team-card:hover {
@@ -422,7 +422,102 @@
 }
 
 .emp-team-card:hover .emp-team-social-box {
-  bottom: -30px;
+  bottom: -20px;
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 1340px) {
+  .emp-team-wrapper {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .emp-team-section {
+    padding-bottom: 80px;
+    padding-top: 50px;
+  }
+
+  .emp-team-wrapper {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 40px;
+  }
+
+  .emp-team-content {
+    max-width: 100%;
+  }
+
+  .emp-team-desc {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .emp-team-watermark {
+    display: none;
+  }
+
+  .emp-team-card {
+    max-width: 340px;
+  }
+
+  .emp-team-img-box {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .emp-team-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .emp-team-card {
+    max-width: 290px;
+    min-height: 460px;
+  }
+
+  .emp-team-img-box {
+    height: 290px;
+  }
+
+  .emp-team-info h4 {
+    font-size: 20px;
+  }
+
+  .emp-team-info p {
+    font-size: 14px;
+  }
+
+  .emp-team-social-box {
+    padding: 10px 15px;
+    max-width: 240px;
+  }
+
+  .emp-team-social-box a {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .emp-team-section {
+    padding-bottom: 60px;
+  }
+
+  .emp-team-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .emp-team-card {
+    max-width: 100%;
+  }
+
+  .emp-team-img-box {
+    height: 320px;
+  }
 }
