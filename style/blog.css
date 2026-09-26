@@ -351,3 +351,150 @@
   background: var(--primary-color);
   border-radius: 5px;
 }
+
+@media (max-width: 1280px) {
+  .blog-promo-section {
+    padding: 80px 0;
+  }
+
+  .blog-promo-grid {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .blog-promo-card {
+    width: calc(33.333% - 14px);
+  }
+
+  .blog-promo-img {
+    height: 240px;
+  }
+
+  .blog-promo-body {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .blog-promo-section {
+    padding: 70px 0;
+  }
+
+  .blog-promo-header {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .blog-promo-grid {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .blog-promo-card {
+    width: calc(50% - 15px);
+    max-width: 410px;
+  }
+
+  .blog-promo-img {
+    height: 260px;
+  }
+
+  .blog-promo-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .blog-promo-desc {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-promo-section {
+    padding: 60px 0;
+  }
+
+  .blog-promo-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-promo-card {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .blog-promo-img {
+    height: 250px;
+  }
+
+  .blog-promo-meta {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .blog-promo-progress {
+    width: 220px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-promo-section {
+    padding: 50px 0;
+  }
+
+  .blog-promo-header {
+    margin-bottom: 30px;
+  }
+
+  .blog-promo-card {
+    max-width: 100%;
+  }
+
+  .blog-promo-img {
+    height: 220px;
+  }
+
+  .blog-promo-date {
+    padding: 10px 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .blog-promo-body {
+    padding: 20px 15px;
+  }
+
+  .blog-promo-meta {
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .blog-promo-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+
+  .blog-promo-desc {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .blog-promo-btn {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .blog-promo-progress {
+    width: 180px;
+    margin-top: 30px;
+  }
+}
